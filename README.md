@@ -2,19 +2,22 @@
 Full stack web application using HTML, CSS, JavaScript
 ## Project Preview
 
-### Home & Registration
-![Home Page](screenshots/home.png)
-![Register Page](screenshots/register.png)
-![Registered Page](screenshots/registered.png)
+## Project Preview
 
-### Login Screens
-![Admin Login](screenshots/login%20as%20admin.png)
-![User Login](screenshots/login%20as%20user.png)
+![Home Page](screenshots/home-page.png)
+![Register Page](screenshots/register-page.png)
+![Registered Page](screenshots/registered-success.png)
 
-### Admin Panel
-![Admin Dashboard](screenshots/admin.png)
-![Admin Access](screenshots/admin%20access.png)
+![Admin Login](screenshots/login-admin.png)
+![User Login](screenshots/login-user.png)
 
-### User Dashboard
-![User Home](screenshots/user%20home.png)
-![User Post](screenshots/user%20post.png)
+![Admin Dashboard](screenshots/admin-dashboard.png)
+![Admin Access](screenshots/admin-access.png)
+
+![User Home](screenshots/user-home.png)
+![User Post](screenshots/user-post.png)
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
