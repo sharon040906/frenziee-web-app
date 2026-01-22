@@ -3,14 +3,14 @@ Full stack web application using HTML, CSS, JavaScript
 
 ## Project Preview
 
-![Home Page](screenshots/home-page.png)
-![Register Page](screenshots/register-page.png)
-![Registered Page](screenshots/registered-success.png)
+![Home Page](screenshots/home.png)
+![Register Page](screenshots/register.png)
+![Registered Page](screenshots/registered.png)
 
-![Admin Login](screenshots/login-admin.png)
-![User Login](screenshots/login-user.png)
+![Admin Login](screenshots/login-as-admin.png)
+![User Login](screenshots/login-as-user.png)
 
-![Admin Dashboard](screenshots/admin-dashboard.png)
+![Admin Dashboard](screenshots/admin.png)
 ![Admin Access](screenshots/admin-access.png)
 
 ![User Home](screenshots/user-home.png)
