@@ -1,5 +1,5 @@
 # frenziee-web-app
-Full stack web application using HTML, CSS, JavaScript
+Front end project web application using HTML, CSS, JavaScript
 
 ## Project Preview
 
