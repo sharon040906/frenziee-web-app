@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frenziee | Your moments. Your madness.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-container" id="auth-container">
+  <div class="logo-area">
+    <img src="logo.png" alt="Frenziee Logo" class="logo">
+    <h1>Frenziee</h1>
+    <p class="tagline">Your moments. Your madness.</p>
+    <div class="home-taglines">
+      <p class="animated-tagline">Share your story, brighten the world!</p>
+      <p class="animated-tagline">Laugh, post, repeat.</p>
+      <p class="animated-tagline">Moments that matter, memories that last.</p>
+    </div>
+  </div>
+
+  <div class="auth-buttons">
+    <button class="btn user-btn" onclick="showLogin('user')">Login as User</button>
+    <button class="btn admin-btn" onclick="showLogin('admin')">Login as Admin</button>
+    <button class="btn register-btn" onclick="showRegister()">Register</button>
+  </div>
+
+  <div class="form" id="login-form" style="display:none">
+    <h2 id="login-title">Login</h2>
+    <input type="email" id="login-email" placeholder="Email">
+    <input type="password" id="login-password" placeholder="Password">
+    <button class="btn submit-btn" onclick="login()">Login</button>
+    <p class="link" onclick="backToMain()">⬅ Back</p>
+  </div>
+
+  <div class="form" id="register-form" style="display:none">
+    <h2>Create Account</h2>
+    <input type="text" id="reg-name" placeholder="Full Name">
+    <input type="email" id="reg-email" placeholder="Email">
+    <input type="password" id="reg-password" placeholder="Password">
+    <input type="file" id="reg-profile" accept="image/*">
+    <button class="btn submit-btn" onclick="register()">Register</button>
+    <p class="link" onclick="backToMain()">⬅ Back</p>
+  </div>
+</div>
+
+<!-- USER DASHBOARD -->
+<div class="dashboard" id="user-dashboard" style="display:none">
+  <header>
+    <div class="brand">
+      <img src="logo.png" alt="logo" class="logo-small">
+      <h2>Frenziee</h2>
+    </div>
+    <p class="tagline">Your moments. Your madness.</p>
+    <button class="btn logout-btn" onclick="logout()">Logout</button>
+  </header>
+
+  <div class="story-bar" id="story-bar"></div>
+
+  <section class="feed" id="feed"></section>
+
+  <section class="create-post" id="create-post" style="display:none">
+    <textarea id="post-content" placeholder="Share your moment..."></textarea>
+    <input type="file" id="post-media" accept="image/*,video/*">
+    <button class="btn post-btn" onclick="createPost()">Post</button>
+  </section>
+
+  <section class="profile" id="profile" style="display:none">
+    <h3>@<span id="profile-name"></span></h3>
+    <p class="tagline">Your moments. Your madness.</p>
+    <div id="my-posts"></div>
+  </section>
+
+  <nav class="bottom-nav">
+    <button onclick="showSection('feed')">🏠</button>
+    <button onclick="showSection('create-post')">➕</button>
+    <button onclick="showSection('profile')">👤</button>
+  </nav>
+</div>
+
+<!-- ADMIN DASHBOARD -->
+<div class="dashboard" id="admin-dashboard" style="display:none">
+  <header>
+    <div class="brand">
+      <img src="logo.png" alt="logo" class="logo-small">
+      <h2>Frenziee Admin</h2>
+    </div>
+    <p class="tagline">Your moments. Your madness.</p>
+    <button class="btn logout-btn" onclick="logout()">Logout</button>
+  </header>
+
+  <section>
+    <h3>All User Posts</h3>
+    <div id="admin-feed"></div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
